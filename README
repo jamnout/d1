@@ -1,8 +1,8 @@
 3+ scenes -- startup, studio intro, title screen, game scene (check scenes folder)
-2+ audio assets -- 1 in intro scene (made by me), 1 on title screen (Seagull Sound Effect by Francesco Dammacco from Pixabay), 1 on game scene (Dive Sound Effect by freesound_community from Pixabay)
+2+ audio assets -- 1 in intro scene (made by me in garageband), 1 on title screen (Seagull Sound Effect by Francesco Dammacco from Pixabay), 1 on game scene (Dive Sound Effect by freesound_community from Pixabay)
 2+ image assets -- 1 in title screen (https://www.pexels.com/photo/point-of-view-of-a-person-on-a-diving-board-8688140/), 1 in game (https://www.istockphoto.com/photo/pool-gm521154563-50163450?searchscope=image%2Cfilm) 
-2+ geometric shapes all in studio logo animation
+2+ geometric shapes all coded individually to create studio logo
 1+ logotype text in studio logo animation -- Moonlighting, Home Video Font (Licenses included in assets folder)
 1 multi-line text block -- game scene
 1+ fading scene transition from studio logo to title scene to game
-1+ object motion animation with studio logo bounce effects
+1+ object motion animation with bounce effects on studio logo, images/objects fading in and out
