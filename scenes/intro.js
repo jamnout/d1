@@ -5,7 +5,7 @@ class Intro extends Phaser.Scene {
     preload(){
         this.load.path = 'assets/';
         this.load.audio('testSong', 'intro-test.mp3');
-        this.load.font('introFont', 'Moonlighting.ttf');
+        this.load.font('introFont', 'Moonlighting-license/Moonlighting.ttf');
     }
     create(){
         this.graphics = this.add.graphics();
@@ -67,7 +67,7 @@ class Intro extends Phaser.Scene {
         this.time.delayedCall(6000, () => {
             this.cameras.main.fadeOut(2000);
             this.cameras.main.on('camerafadeoutcomplete', () => {
-                this.scene.switch('titleScene'); // switch
+                this.scene.switch('titleScene');
             })
         })
     }

@@ -8,15 +8,15 @@ class StartUp extends Phaser.Scene {
     create(){
         this.graphics = this.add.graphics();
 
-        this.TitleA = this.add.text(
+        this.Title = this.add.text(
             115,
             207,
-            "Click to Start",
+            "Adam Top\nCMPM120-D1\nClick to Continue",
             {font: "50px", color: "#ffffff"}
         );
 
         this.input.once('pointerdown', () => {
-            this.scene.start('introScene');
+            this.scene.switch('introScene');
         });
     }
     update(){}
