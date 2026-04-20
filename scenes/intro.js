@@ -11,7 +11,7 @@ class Intro extends Phaser.Scene {
         this.graphics = this.add.graphics();
 
         const jingle = this.sound.play('testSong', {
-            volume: 0.6
+            volume: 1,
         });
 
         this.TitleA = this.add.text(

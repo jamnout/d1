@@ -14,6 +14,7 @@ class Title extends Phaser.Scene {
         this.cameras.main.fadeIn(3000, 0, 0, 0);
         const gulls = this.sound.play('gulls', {
             loop: 'True',
+            volume: 1.2,
         })
 
         this.board = this.add.image(400, 300, 'board');
