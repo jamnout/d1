@@ -8,3 +8,6 @@ let config = {
 }
 
 let game = new Phaser.Game(config);
+
+// look into tween chains, on complete function
+// https://docs.phaser.io/api-documentation/class/tweens-tweenchain

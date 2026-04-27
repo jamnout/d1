@@ -52,7 +52,7 @@ class Intro extends Phaser.Scene {
         const sh4 = this.graphics.fillRect(420, 220, 290, 130);
         const sh5 = this.graphics.fillTriangle(200, 230, 330, 130, 315, 270);
         const sh6 = this.graphics.fillTriangle(290, 500, 200, 350, 420, 380);
-
+        
         this.tweens.add({
             targets: [sh1, sh2, sh3, sh4, sh5, sh6],
             alpha: {

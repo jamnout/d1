@@ -18,14 +18,6 @@ class Title extends Phaser.Scene {
         })
 
         this.board = this.add.image(400, 300, 'board');
-        this.tweens.add({
-            targets: this.board,
-            scale: 0.6,
-            x: 260,
-            y: 200,
-            duration: 2000
-        })
-
         this.title1 = this.add.text(
             20,
             400,
@@ -42,13 +34,34 @@ class Title extends Phaser.Scene {
         this.title2.setAlpha(0);
 
         this.tweens.add({
+            targets: this.board,
+            scale: 0.6,
+            x: 260,
+            y: 200,
+            duration: 2000
+        })
+
+        this.tweens.add({
             targets: this.title1,
             ease: "Power0",
             alpha: 1,
             delay: 2400,
             duration: 0,
         })
-        this.tweens.add({
+        let chain = scene.tweens.chain({
+            targets: this.title2,
+            tweens: [
+                {
+                    ease: "Power0",
+                    alpha: 1,
+                    delay: 3000,
+                    duration: 600,
+                    yoyo: 'True',
+                    repeat: -1        
+                }
+            ]
+        })
+ /*       this.tweens.add({
             targets: this.title2,
             ease: "Power0",
             alpha: 1,
@@ -57,6 +70,7 @@ class Title extends Phaser.Scene {
             yoyo: 'True',
             repeat: -1
         })
+*/
         
         this.input.once('pointerdown', () => {
                 this.cameras.main.fadeOut(1000);
